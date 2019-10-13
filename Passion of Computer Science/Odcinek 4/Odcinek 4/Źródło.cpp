@@ -2,10 +2,14 @@
 #include<cstdlib>
 #include<time.h>
 #include<stdio.h>
+#include<windows.h>
+
 using namespace std;
-int number, guess, guess_time=0;
 
 //Number riddle
+/*int number, guess, guess_time=0;
+
+
 int main()
 {
 	cout << "I thought of a number from 1 to 100" << endl;
@@ -36,5 +40,24 @@ int main()
 	}
 	getchar();getchar();
 	//system("pause");
+	return 0;
+}*/
+
+//lotto
+
+int number;
+
+int main()
+{
+	cout << "Welcome everyone to the big LOTTO contest! In a couple of seconds we will start to draw the numbers." << endl;
+	Sleep(3000);
+	srand(time(NULL));
+
+	for (int i = 1; i <= 6; i++)
+	{
+		number = rand() % 49 + 1;
+		Sleep(1000);
+		cout << number<<"\a" << endl;
+	}
 	return 0;
 }
