@@ -33,6 +33,6 @@ int main()
 			cout << "It's your " << guess_time << " attempt." << endl;
 		}
 	}
-
+	getchar();
 	return 0;
 }
