@@ -15,7 +15,7 @@ int main()
 	while (guess!=number)
 	{
 		guess_time++;
-		cout << "Take a guess, what is the unber? ";
+		cout << "Take a guess, what is the number? ";
 		cin >> guess;
 		if (guess == number)
 		{
@@ -33,6 +33,7 @@ int main()
 			cout << "It's your " << guess_time << " attempt." << endl;
 		}
 	}
-	getchar();
+	//getchar();
+	system("pause");
 	return 0;
 }
