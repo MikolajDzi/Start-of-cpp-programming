@@ -1,6 +1,7 @@
 #include<iostream>
 #include<cstdlib>
 #include<time.h>
+#include<stdio.h>
 using namespace std;
 int number, guess, guess_time=0;
 
@@ -33,7 +34,7 @@ int main()
 			cout << "It's your " << guess_time << " attempt." << endl;
 		}
 	}
-	//getchar();
-	system("pause");
+	getchar();getchar();
+	//system("pause");
 	return 0;
 }
