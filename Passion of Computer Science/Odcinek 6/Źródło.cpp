@@ -70,7 +70,14 @@ when user insert char instead of number is to change switch from int -> char*/
 int main()
 {
 	cout << "What month do you want to check? ";
+	
 	cin >> month_nr;
+
+	if (!(cin >> month_nr))
+	{
+		cerr << "It's not a number..." << endl;
+		exit(0);
+	}
 
 	switch (month_nr)
 	{
