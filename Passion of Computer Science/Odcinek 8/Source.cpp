@@ -1,6 +1,6 @@
 #include<iostream>
 #include<string>
-
+#include<algorithm>
 using namespace std;
 
 int main() {
@@ -43,6 +43,14 @@ int main() {
 	string merged_sentences = first_sentence + second_sentence;
 
 	cout << merged_sentences;*/
+
+	string sentence = "Jenny has a dog";
+
+	transform(sentence.begin(), sentence.end(), sentence.begin(), ::toupper);
+	cout << sentence;
+	cout << endl;
+	transform(sentence.begin(), sentence.end(), sentence.begin(), ::tolower);
+	cout << sentence;
 
 	return 0;
 }
