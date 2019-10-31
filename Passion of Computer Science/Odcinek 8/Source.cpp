@@ -62,6 +62,10 @@ int main() {
 	else
 		cout << "Not found";*/ //searching of the word in a sentence
 
+	/*string sentence = "Jenny has a cat";
+	sentence.erase(12, 3);
+
+	cout << sentence;*/ //erasing words from sentence
 
 	return 0;
 }
