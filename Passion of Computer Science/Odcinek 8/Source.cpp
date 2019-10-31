@@ -72,10 +72,16 @@ int main() {
 
 	cout << sentence;*/ //inserting words to the sentences
 
-	string sentence = "Jenny has a cat";
+	/*string sentence = "Jenny has a cat";
 	sentence.replace(12, 3, "dog");
-	cout << sentence;
+	cout << sentence;*/ // replacing the words in sentence
 
+	/*string sentence = "Jenny has a cat";
+	string new_sentence = sentence.substr(12,3);
+
+	cout << new_sentence;*/ //geting subsentence from sentece and saving it
+
+	/*for any other string based operation go to string c++ reference*/
 
 	return 0;
 }
