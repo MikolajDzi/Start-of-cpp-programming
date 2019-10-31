@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\mikol\OneDrive\Desktop\Studies\Training\Programming\Passion of Computer Science\Odcinek 9\Source.cpp(9): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mikol\OneDrive\Desktop\Studies\Training\Programming\Passion of Computer Science\Odcinek 9\Source.cpp(15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mikol\OneDrive\Desktop\Studies\Training\Programming\Passion of Computer Science\Odcinek 9\Source.cpp(21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Odcinek 9.vcxproj -> C:\Users\mikol\OneDrive\Desktop\Studies\Training\Programming\Passion of Computer Science\Odcinek 9\Debug\Odcinek 9.exe
