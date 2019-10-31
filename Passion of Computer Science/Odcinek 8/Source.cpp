@@ -44,13 +44,24 @@ int main() {
 
 	cout << merged_sentences;*/
 
-	string sentence = "Jenny has a dog";
+	/*string sentence = "Jenny has a dog";
 
 	transform(sentence.begin(), sentence.end(), sentence.begin(), ::toupper);
 	cout << sentence;
 	cout << endl;
 	transform(sentence.begin(), sentence.end(), sentence.begin(), ::tolower);
-	cout << sentence;
+	cout << sentence;*/ //letter to uppercase and lowercase
+
+	/*string sentence = "Jenny has a cat";
+	string search = "cat";
+
+	size_t position = sentence.find(search);
+
+	if (position != string::npos)
+		cout << "Found on the position: " << position;
+	else
+		cout << "Not found";*/ //searching of the word in a sentence
+
 
 	return 0;
 }
