@@ -67,10 +67,15 @@ int main() {
 
 	cout << sentence;*/ //erasing words from sentence
 
-	string sentence = "Jenny has a cat";
+	/*string sentence = "Jenny has a cat";
 	sentence.insert(15, " George");
 
+	cout << sentence;*/ //inserting words to the sentences
+
+	string sentence = "Jenny has a cat";
+	sentence.replace(12, 3, "dog");
 	cout << sentence;
+
 
 	return 0;
 }
