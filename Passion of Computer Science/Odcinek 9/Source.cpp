@@ -16,10 +16,10 @@ float num_miles(float m) //float m formal argument not seen by main function
 	return miles;
 }
 
-float num_jards(float j) //float m formal argument not seen by main function
+float num_yards(float j) //float m formal argument not seen by main function
 {
-	float jards = j * 1.0936133; //local variable
-	return jards;
+	float yards = j * 1.0936133; //local variable
+	return yards;
 }
 
 void nume_miles(float mi)
@@ -31,9 +31,9 @@ int main() {
 	cout << "How many meters you want to convert?";
 	cin >> meters;
 
-	cout << "In inches: " << num_inches(meters) << endl; // actaul parameter/argument
+	cout << "In inches: " << num_inches(meters) << endl; // actual parameter/argument
 	cout << "In miles: " << num_miles(meters) << endl;
-	cout << "In jards: " << num_jards(meters) << endl;
+	cout << "In yards: " << num_yards(meters) << endl;
 	nume_miles(meters);
 
 	return 0;
