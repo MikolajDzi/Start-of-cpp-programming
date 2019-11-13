@@ -1,2 +1,3 @@
 ﻿  Source.cpp
-  Odcinek 10.vcxproj -> C:\Users\mikol\source\repos\Odcinek 10\Debug\Odcinek 10.exe
+C:\Users\mikol\OneDrive\Desktop\Studies\Training\Programming\Passion of Computer Science\Odcinek 10\Source.cpp(83): warning C4305: '=': truncation from 'double' to 'float'
+  Odcinek 10.vcxproj -> C:\Users\mikol\OneDrive\Desktop\Studies\Training\Programming\Passion of Computer Science\Odcinek 10\Debug\Odcinek 10.exe
