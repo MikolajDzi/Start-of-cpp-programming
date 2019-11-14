@@ -1,9 +1,12 @@
 #include<iostream>
+#include<iomanip>
 using namespace std;
 
 //finding max value
 
-float a, b, c, d, e;
+
+const int N=5;
+float arr[N];
 
 /*signed int a, b, c;
 int counter = 0;
@@ -49,19 +52,49 @@ int main()
 	return 0;
 }*/
 
-float nearest_to_average(float a, float b, float c, float d, float e)
+float nearest_to_average(float* array,int lenght)
 {
-	float average = (a + b + c + d + e)/5;
-	float nearest_number=a;
-	if (a > average);
+	float sum,average;
+	float dbaav[N]; //difference betwen average and values
 
+
+	for (int i = 0; i < 5; i++)
+	{
+		sum += array[i];
+	}
+	average = sum / 5;
+	for (int i = 0; i < 5; i++)
+	{
+		if (array[i] > average)
+		{
+			dbaav[i] = array[i] - average;
+		}
+		else
+		{
+			dbaav[i] = average - array[i];
+		}
+	}
+
+
+	
 }
 
 
 int main()
 {
+	
+	
 	cout << "Insert 5 numbers: ";
-	cin >> a >> b >> c >> d >> e;
+	for (int i = 0; i < 5; i++)
+	{
+		cin >> arr[i];
+	}
+
+
+	for (int i = 0; i < 5; i++)
+	{
+		cout << arr[i] << setw(4);
+	}
 
 
 	return 0;
