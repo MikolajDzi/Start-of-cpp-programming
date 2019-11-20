@@ -54,7 +54,7 @@ int main()
 
 float nearest_to_average(float* array,int lenght)
 {
-	float sum,average;
+	float sum, average;
 	float dbaav[N]; //difference betwen average and values
 
 
