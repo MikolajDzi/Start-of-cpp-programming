@@ -54,28 +54,35 @@ int main()
 
 float nearest_to_average(float* array,int lenght)
 {
-	float sum, average;
-	float dbaav[N]; //difference betwen average and values
+	float sum = 0;
+	float average, min;
+	int c=0;
+	float dbaav[N];
+	dbaav[0] = 0;//difference betwen average and values
+	min = 0;
+	float nearest[N];
+	
 
-
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < lenght; i++)
 	{
 		sum += array[i];
 	}
-	average = sum / 5;
-	for (int i = 0; i < 5; i++)
+	average = sum / lenght;
+	
+	for (int i = 0; i < lenght; i++)
 	{
 		if (array[i] > average)
-		{
 			dbaav[i] = array[i] - average;
-		}
 		else
-		{
 			dbaav[i] = average - array[i];
-		}
 	}
-
-
+	
+	for (int i = 0; i < lenght; i++)
+	{
+		if (dbaav[i] < dbaav[i + 1])
+			min = dbaav[i];
+	}
+	
 	
 }
 
@@ -91,6 +98,13 @@ int main()
 	}
 
 
+	for (int i = 0; i < 5; i++)
+	{
+		cout << arr[i] << setw(4);
+	}
+
+	nearest_to_average(arr,N);
+	
 	for (int i = 0; i < 5; i++)
 	{
 		cout << arr[i] << setw(4);
