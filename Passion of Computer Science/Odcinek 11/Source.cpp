@@ -1,10 +1,11 @@
 #include<iostream>
 #include<iomanip>
+#include<vector>
 using namespace std;
 
 //finding max value
 
-
+vector<float>nearest;
 const int N=5;
 float arr[N];
 
@@ -52,15 +53,15 @@ int main()
 	return 0;
 }*/
 
-float nearest_to_average(float* array,int lenght)
+void nearest_to_average(float* array,const int lenght)
 {
 	float sum = 0;
-	float average, min;
+	float average, min=0;
 	int c=0;
 	float dbaav[N];
 	dbaav[0] = 0;//difference betwen average and values
-	min = 0;
-	float nearest[N];
+	min = dbaav[0];
+	//float nearest[N];
 	
 
 	for (int i = 0; i < lenght; i++)
@@ -68,7 +69,8 @@ float nearest_to_average(float* array,int lenght)
 		sum += array[i];
 	}
 	average = sum / lenght;
-	
+	cout << "Average is equal to: "<< average << endl;
+
 	for (int i = 0; i < lenght; i++)
 	{
 		if (array[i] > average)
@@ -77,10 +79,24 @@ float nearest_to_average(float* array,int lenght)
 			dbaav[i] = average - array[i];
 	}
 	
+	cout << "Lenghts to average: ";
 	for (int i = 0; i < lenght; i++)
 	{
-		if (dbaav[i] < dbaav[i + 1])
-			min = dbaav[i];
+		cout << dbaav[i] << setw(10);
+	}
+	cout << endl;
+	min = dbaav[0];
+	for (int i = 0; i < lenght; i++)
+	{
+		if (min > dbaav[i])
+			min = dbaav[i];	
+	}
+	
+	for (int i = 0; i < lenght; i++)
+	{
+		if (min == dbaav[i])
+			nearest.push_back(array[i]);
+	
 	}
 	
 	
@@ -97,19 +113,13 @@ int main()
 		cin >> arr[i];
 	}
 
-
-	for (int i = 0; i < 5; i++)
-	{
-		cout << arr[i] << setw(4);
-	}
-
 	nearest_to_average(arr,N);
-	
-	for (int i = 0; i < 5; i++)
-	{
-		cout << arr[i] << setw(4);
-	}
+	cout << setw(0) << "Nearest to average are: ";
 
+	for (int i = 0; i < nearest.size(); i++) {
+		cout << nearest[i] << setw(4);
+	}
+	
 
 	return 0;
 }
