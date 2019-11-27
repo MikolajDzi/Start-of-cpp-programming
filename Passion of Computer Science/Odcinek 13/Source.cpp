@@ -44,7 +44,7 @@ int main() {
 }*/
 
 //Fibonacci sequence
-int n;
+/*int n;
 clock_t start, stop;
 double time_wop;
 double fib(int n)
@@ -68,4 +68,22 @@ int main()
 	cout << "Time of the write" << time_wop << endl;
 
 return 0;
+}*/
+
+//silnia
+int a;
+int multi(int a) 
+{
+	if (a == 0)
+		return 1;
+
+	else
+		return a * multi(a - 1);
+}
+
+int main()
+{
+	cin >> a;
+	cout << multi(a);
+	return 0;
 }
