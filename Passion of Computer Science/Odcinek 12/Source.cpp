@@ -28,7 +28,7 @@ int main()
 //first numbers
 
 
-int n,test;
+/*int n,test;
 
 
 
@@ -50,10 +50,75 @@ int main()
 				else
 				{
 					cout << "TAK" << endl;
-					i = n + 1;
+
 				}
 			}
 		}
 	}
+	return 0;
+}*/
+
+/*int a,b,square, temp, test;
+
+int main()
+{
+	cin >> test;
+	for (int j = 0; j < test; j++)
+	{
+		cin >> a >> b;
+		square = pow(a, b);
+		if(square>1)
+		temp=square/100;
+		square -= temp;
+		temp=square/10
+	}
+}*/
+
+//quadratic eqution
+
+/*float a, b, c, test;
+
+
+int main()
+{
+	test = 3;
+	for (int i = 0; i < test; i++)
+	{
+		cin >> a >> b >> c;
+		if (((b * b) - (4 * a * c)) < 0)
+		{
+			cout << 0 << endl;
+		}
+		else if (((b * b) - (4 * a * c)) == 0)
+		{
+			cout << 1 << endl;
+		}
+		else if (((b * b) - (4 * a * c)) > 0)
+		{
+			cout << 2 << endl;
+		}
+	}
+	return 0;
+}*/
+
+//strange addition
+
+int a,sum, test, numbs;
+
+int main()
+{
+	cin >> test;
+	for (int i = 0; i < test; i++)
+	{
+		cin >> numbs;
+		for (int j = 0; j < numbs; j++)
+		{
+			cin >> a;
+			sum += a;
+		}
+		cout << sum << endl;
+		sum = 0;
+	}
+
 	return 0;
 }
