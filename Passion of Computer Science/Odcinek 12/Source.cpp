@@ -76,35 +76,29 @@ int main()
 
 //quadratic eqution
 
-/*float a, b, c, test;
-
-
+double a, b, c;
 int main()
 {
-	test = 3;
-	for (int i = 0; i < test; i++)
+cin >> a >> b >> c;
+double delta = (b * b) - (4 * a * c);
+	if (delta < 0)
 	{
-		cin >> a >> b >> c;
-		if (((b * b) - (4 * a * c)) < 0)
-		{
-			cout << 0 << endl;
-		}
-		else if (((b * b) - (4 * a * c)) == 0)
-		{
-			cout << 1 << endl;
-		}
-		else if (((b * b) - (4 * a * c)) > 0)
-		{
-			cout << 2 << endl;
-		}
+		cout << 0 << endl;
 	}
-	return 0;
-}*/
+	else if (delta == 0)
+	{
+		cout << 1 << endl;
+	}
+	else
+	{
+		cout << 2 << endl;
+	}
+return 0;
+}
 
 //strange addition
 
-int a,sum, test, numbs;
-
+/*int a,sum, test, numbs;
 int main()
 {
 	cin >> test;
@@ -119,6 +113,5 @@ int main()
 		cout << sum << endl;
 		sum = 0;
 	}
-
 	return 0;
-}
+}*/
