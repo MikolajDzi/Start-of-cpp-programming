@@ -19,7 +19,7 @@ void bubble_sort(int* array, int size)
 	}
 }
 
-void quick_sort(int* array, int left, int right)
+void quick_sort(int *array, int left, int right)
 {
 	int v = array[(left + right) / 2];
 	int i, j, x;
@@ -29,7 +29,7 @@ void quick_sort(int* array, int left, int right)
 		{
 			while (array[i] < v) i++;
 			while (array[j] > v) j--;
-			if (i <= v)
+			if (i <= j)
 			{
 				x = array[i];
 				array[i] = array[j];
@@ -60,29 +60,30 @@ int main()
 	{
 		arr_quick[i] = arr_bubble[i];
 	}
-	//cout << "Before sort: " << endl;
-	/*for (int i = 0; i < N; i++)
+	cout << "Before sort: " << endl;
+	for (int i = 0; i < N; i++)
 	{
 		cout << arr_bubble[i] << "\n";
-	}*/
+	}
 	start_b = clock();
 	bubble_sort(arr_bubble, N);
 	stop_b = clock();
 	timer_b = ((double)stop_b - (double)start_b) / CLOCKS_PER_SEC;
-	//cout << "After bubble sort: " << endl;
-	/*for (int i = 0; i < N; i++)
+	cout << "After bubble sort: " << endl;
+	for (int i = 0; i < N; i++)
 	{
 		cout << arr_bubble[i] << "\n";
-	}*/
+	}
+	cout << endl;
 	start_c = clock();
 	quick_sort(arr_quick, 0, N-1);
 	stop_c = clock();
 	timer_c = ((double)stop_c - (double)start_c) / CLOCKS_PER_SEC;
-	//cout << "After quick sort: " << endl;
-	/*for (int i = 0; i < N; i++)
+	cout << "After quick sort: " << endl;
+	for (int i = 0; i < N; i++)
 	{
 		cout << arr_quick[i] << "\n";
-	}*/
+	}
 	cout << endl;
 	cout << "It took " << timer_b << "s to bubble sort this array." << "\n";
 	cout << "It took " << timer_c << "s to quick sort this array.";
