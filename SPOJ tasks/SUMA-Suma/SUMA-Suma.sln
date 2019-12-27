@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SUMA-Suma", "SUMA-Suma.vcxproj", "{FD6E3F0D-2AD2-427E-B04F-7F3CFA23EEBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD6E3F0D-2AD2-427E-B04F-7F3CFA23EEBB}.Debug|x64.ActiveCfg = Debug|x64
+		{FD6E3F0D-2AD2-427E-B04F-7F3CFA23EEBB}.Debug|x64.Build.0 = Debug|x64
+		{FD6E3F0D-2AD2-427E-B04F-7F3CFA23EEBB}.Debug|x86.ActiveCfg = Debug|Win32
+		{FD6E3F0D-2AD2-427E-B04F-7F3CFA23EEBB}.Debug|x86.Build.0 = Debug|Win32
+		{FD6E3F0D-2AD2-427E-B04F-7F3CFA23EEBB}.Release|x64.ActiveCfg = Release|x64
+		{FD6E3F0D-2AD2-427E-B04F-7F3CFA23EEBB}.Release|x64.Build.0 = Release|x64
+		{FD6E3F0D-2AD2-427E-B04F-7F3CFA23EEBB}.Release|x86.ActiveCfg = Release|Win32
+		{FD6E3F0D-2AD2-427E-B04F-7F3CFA23EEBB}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B95D1F5-E7D4-412D-8BAA-B3AF2D9A791E}
+	EndGlobalSection
+EndGlobal
