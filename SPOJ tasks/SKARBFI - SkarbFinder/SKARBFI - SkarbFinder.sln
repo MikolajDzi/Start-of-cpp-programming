@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SKARBFI - SkarbFinder", "SKARBFI - SkarbFinder.vcxproj", "{AC599AA9-488B-438C-A69B-6B40CA77AD34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC599AA9-488B-438C-A69B-6B40CA77AD34}.Debug|x64.ActiveCfg = Debug|x64
+		{AC599AA9-488B-438C-A69B-6B40CA77AD34}.Debug|x64.Build.0 = Debug|x64
+		{AC599AA9-488B-438C-A69B-6B40CA77AD34}.Debug|x86.ActiveCfg = Debug|Win32
+		{AC599AA9-488B-438C-A69B-6B40CA77AD34}.Debug|x86.Build.0 = Debug|Win32
+		{AC599AA9-488B-438C-A69B-6B40CA77AD34}.Release|x64.ActiveCfg = Release|x64
+		{AC599AA9-488B-438C-A69B-6B40CA77AD34}.Release|x64.Build.0 = Release|x64
+		{AC599AA9-488B-438C-A69B-6B40CA77AD34}.Release|x86.ActiveCfg = Release|Win32
+		{AC599AA9-488B-438C-A69B-6B40CA77AD34}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B64C861-51FD-4343-857F-B53DFC4F2816}
+	EndGlobalSection
+EndGlobal
